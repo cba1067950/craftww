@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  top: 20px;
+  left: 20px;
+  overflow: hidden;
+  border: 1px solid rgb(95, 95, 95);
+  outline: 1px solid rgb(29, 29, 29);
+  z-index: 3;
+}
+
+#container:hover {
+  cursor: pointer;
+}
+
+#logo {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  z-index: 2;
+}
+
+/*  bottle dimensions: x 413 y 564  */
+#bottle {
+  position: absolute;
+  left: -50px;
+  top: -222px;
+  opacity: 0;
+  z-index: -1;
+}
+
+#bubble_box {
+  position: absolute;
+  padding-left: 60px;
+  padding-bottom: 74px;
+  left: 124px;
+  top: 140px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* bubble dimensions: x 62 y 84 */
+#bubbles {
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* circle burst */
+#gradient {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#text_1,
+#text_2,
+#text_3,
+#cta {
+  position: absolute;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(97, 100, 187);
+  font-size: 18pt;
+}
+
+#text_1 {
+  top: 15px;
+  right: -250px;
+}
+
+#text_2 {
+  top: 43px;
+  right: -250px;
+}
+
+#text_3 {
+  font-size: 20pt;
+  top: 15px;
+  right: -250px;
+}
+
+#cta {
+  top: 205px;
+  left: -300px;
+  text-align: center;
+  line-height: 27px;
+  font-size: 14pt;
+  width: 160px;
+  height: 27px;
+  border: 1px solid;
+  z-index: 6;
+}
+
+h5 {
+  font-weight: 300;
+  pointer-events: none;
+}
+
+/* Notes from .psd 
+font: helvetica neue
+Top text: 24 pt
+cta: 15pt
+*/
